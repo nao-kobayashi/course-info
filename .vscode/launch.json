@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "args": ["masanaok"],
+            "args": ["sander-mak"],
             "type": "java",
             "name": "Current File",
             "request": "launch",
