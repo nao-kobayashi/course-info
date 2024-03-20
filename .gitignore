@@ -1,13 +1,2 @@
-course-info/target/course-info-1.0-SNAPSHOT.jar
-course-info/target/classes/com/mkprojects/Main.class
-course-info/target/classes/com/mkprojects/courseinfo/cli/CourseRetriever.class
-course-info/target/maven-archiver/pom.properties
-course-info/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-course-info/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-course-info/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
-course-info/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
-course-info/target/classes/com/mkprojects/courseinfo/cli/service/CourseRetrievalService.class
-course-info/target/classes/com/mkprojects/courseinfo/cli/service/PluralsightCourse.class
-course-info/target/surefire-reports/com.mkprojects.courseinfo.cli.service.PluralsightCourseTest.txt
-course-info/target/surefire-reports/TEST-com.mkprojects.courseinfo.cli.service.PluralsightCourseTest.xml
-course-info/target/test-classes/com/mkprojects/courseinfo/cli/service/PluralsightCourseTest.class
+course-info/target/*
+courses.db.mv.db
