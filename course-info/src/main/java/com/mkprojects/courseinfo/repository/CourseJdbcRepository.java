@@ -30,6 +30,18 @@ class CourseJdbcRepository implements CourseRepository {
     }
 
     @Override
+    public boolean exists(String id) {
+        try (Connection connection  = datasource.getConnection()) {
+            PreparedStatement statement = connection.prepareStatement("select * from COURSES where id = ?");
+            statement.setString(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            return resultSet.next();
+        } catch (SQLException e) {
+            throw new RepositoryException("Failed to retrieve courses ", e);
+        }
+    }
+
+    @Override
     public void saveCourse(Course course) {
         try (Connection connection  = datasource.getConnection()) {
             PreparedStatement statement = connection.prepareStatement(INSERT_COURSE);

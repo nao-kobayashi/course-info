@@ -22,7 +22,9 @@ public class CourseStorageService {
                 PS_BASE_URL + psCourse.contentUrl()
             );
 
-            courseRepository.saveCourse(course);
+            if (!courseRepository.exists(course.id())) {
+                courseRepository.saveCourse(course);
+            }
         }
     }
 }

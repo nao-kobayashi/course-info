@@ -21,6 +21,9 @@ public class CourseStorageServiceTest {
 
         Course expected = new Course("1", "title", 100, "https://app.pluralsight.com/url-1");
         assertEquals(List.of(expected), courseRepository.getAllCourses());
+
+        assertEquals(true, courseRepository.exists("1"));
+        assertEquals(false, courseRepository.exists("a"));
     }
 
     static class InMemoryCourseRepository implements CourseRepository {
@@ -34,6 +37,13 @@ public class CourseStorageServiceTest {
         @Override
         public List<Course> getAllCourses() {
             return Courses;
+        }
+
+        @Override
+        public boolean exists(String id) {
+            return Courses
+                .stream()
+                .anyMatch(c -> c.id().equals(id));
         }
         
     }
