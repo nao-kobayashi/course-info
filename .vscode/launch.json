@@ -5,7 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "args": ["sander-mak"],
+            "type": "java",
+            "name": "CourseServer",
+            "request": "launch",
+            "mainClass": "com.mkprojects.courseinfo.server.CourseServer",
+            "projectName": "course-info-server"
+        },
+        {
+            "args": [
+                "sander-mak"
+            ],
             "type": "java",
             "name": "Current File",
             "request": "launch",

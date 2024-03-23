@@ -1,6 +1,7 @@
 package com.mkprojects.courseinfo.cli.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.mkprojects.courseinfo.domain.Course;
 import com.mkprojects.courseinfo.repository.CourseRepository;
@@ -19,7 +20,8 @@ public class CourseStorageService {
                 psCourse.id(),
                 psCourse.title(),
                 psCourse.durationInMinutes(),
-                PS_BASE_URL + psCourse.contentUrl()
+                PS_BASE_URL + psCourse.contentUrl(),
+                Optional.empty()
             );
 
             if (!courseRepository.exists(course.id())) {
