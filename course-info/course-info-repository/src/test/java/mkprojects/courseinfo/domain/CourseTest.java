@@ -1,9 +1,9 @@
-package com.mkprojects.courseinfo.domain;
+package mkprojects.courseinfo.domain;
+
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import java.util.Optional;
-
 import org.junit.jupiter.api.Test;
+import com.mkprojects.courseinfo.domain.Course;
 
 
 public class CourseTest {

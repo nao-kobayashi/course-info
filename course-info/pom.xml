@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>course-info-server</module>
+        <module>course-info-repository</module>
     </modules>
 
     <properties>

@@ -1,3 +1,4 @@
 course-info/target/*
 courses.db.mv.db
 course-info/course-info-server/target/*
+course-info/course-info-repository/target/*

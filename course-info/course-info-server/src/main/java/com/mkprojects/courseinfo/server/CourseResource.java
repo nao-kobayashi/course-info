@@ -31,6 +31,8 @@ public class CourseResource {
     @Produces("application/json;  charset=UTF-8")
     public List<Course> getCourses() {
         try {
+            LOG.info("getCourses requested");
+
             return courseRepository
                 .getAllCourses()
                 .stream()
